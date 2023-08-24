@@ -1,0 +1,47 @@
+1 - Criamos um projeto
+2 - Instalandoodjango e mais:
+    pip install django psycopg2-binary gunicorn dj-static django-stdimage
+
+3 - Salavar todas as bibliotecas que temos em nosso projeto no aquivo requirementes.txt
+    pip freeze > requirementes.txt
+
+4- Criar nosso projeto:
+    django-admin startprojetc fusion .
+
+5 - criar nossa aplicação core
+    django-admin startapp core
+6 - AllowedHost '*' no install app colocar nossa  app 'core', e no DIR['templates'] clicamos na pasta core e criamosum
+    diretório templates, depois criamos o static botao direito no core
+
+7 - No DATA-BASE colocamos  'ENGINE': 'django.db.backends.postgresql',
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
