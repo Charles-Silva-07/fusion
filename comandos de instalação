@@ -13,10 +13,30 @@
 6 - AllowedHost '*' no install app colocar nossa  app 'core', e no DIR['templates'] clicamos na pasta core e criamosum
     diretório templates, depois criamos o static botao direito no core
 
-7 - No DATA-BASE colocamos  'ENGINE': 'django.db.backends.postgresql',
-8-
-9-
-10-
+7 - No DATA-BASE colocamos  'ENGINE': 'django.db.backends.postgresql', e configuramos nosso banco
+       'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'fusion',
+        'USER': 'geek',
+        'PASSWORD': 'university',
+        'HOST': 'localhost',
+        'PORT': '5432',
+8- Colocamos o times Zone e pt-br
+
+9- Em urls fusion
+    from django.urls import path, include
+    e colocamos o
+    path('', include('core.urls'))
+    e importamos
+    from django.conf.urls.static import static
+    from django.conf import settings
+    E depois no final do urlpatterns colocamos.
+    ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+10- Na nossa app core criamos um arquivo urls
+    e importamos
+    from django.urls import path
+
+11-
 
 
 
